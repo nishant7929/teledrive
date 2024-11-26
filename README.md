@@ -10,23 +10,23 @@ This is the open source project of Google Drive/OneDrive/iCloud/Dropbox alternat
 - We deserve the free cloud storage service! Pricing: [Google Drive](https://one.google.com/about/plans), [OneDrive](https://one.google.com/about/plans), [Dropbox](https://www.dropbox.com/individual/plans-comparison), [iCloud](https://support.apple.com/en-us/HT201238)
 
 
-## Getting Started
+<!-- ## Getting Started
 
-Read here for full instructions: [teledriveapp.com](https://teledriveapp.com)
+Read here for full instructions: [teledriveapp.com](https://teledriveapp.com) -->
 
-## API Documentation
+<!-- ## API Documentation
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/restfireteam/workspace/mgilangjanuar/collection/1778529-3e4b0f8d-f721-4055-8d30-33cacaea93e6?ctx=documentation)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/restfireteam/workspace/mgilangjanuar/collection/1778529-3e4b0f8d-f721-4055-8d30-33cacaea93e6?ctx=documentation) -->
 
-## How to Contribute
+<!-- ## How to Contribute
 
 - Fork and clone this repository
 - Commit your changes
 - Create a pull request to the `staging` branch
 
-Or, just send us an [issue](https://github.com/mgilangjanuar/teledrive/issues) for reporting bugs and/or ask the questions, share your ideas, etc in [discussions](https://github.com/mgilangjanuar/teledrive/discussions).
+Or, just send us an [issue](https://github.com/mgilangjanuar/teledrive/issues) for reporting bugs and/or ask the questions, share your ideas, etc in [discussions](https://github.com/mgilangjanuar/teledrive/discussions). -->
 
-## Deploy to Heroku
+<!-- ## Deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mgilangjanuar/teledrive)
 
 If you're experiencing issues check this https://github.com/mgilangjanuar/teledrive/issues/373
@@ -34,7 +34,7 @@ If you're experiencing issues check this https://github.com/mgilangjanuar/teledr
 # Deploy to Railway
 [![Deploy](https://railway.app/button.svg)](https://railway.app/new/template/m4m_XE?referralCode=BvMMSE)
 
-(DrakeTDL's forked Teledrive repo powers the railway template.)
+(DrakeTDL's forked Teledrive repo powers the railway template.) -->
 
 ## Folder Structure
 
@@ -59,15 +59,15 @@ We using the monorepo structure with [yarn workspaces](https://classic.yarnpkg.c
 │   └── yarn.lock
 └── yarn.lock
 ```
-## Contributers 
+<!-- ## Contributers 
 ### All thanks to our contributors 
 
 <a href="https://github.com/mgilangjanuar/teledrive/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=mgilangjanuar/teledrive" />
-</a>
+</a> -->
 
 
-## Community
+<!-- ## Community
 [![img](https://user-images.githubusercontent.com/34012548/172031316-60d858c7-8401-42f3-9c73-0b75e80c8292.png)](https://discord.gg/PKNVJwAZnR)
 
-[![img](https://media.discordapp.net/attachments/978783095463501834/984317776544014416/ytbutton.png)](https://youtube.com/channel/UCg9WsNAHdOpo8SyM8JHGuZQ)
+[![img](https://media.discordapp.net/attachments/978783095463501834/984317776544014416/ytbutton.png)](https://youtube.com/channel/UCg9WsNAHdOpo8SyM8JHGuZQ) -->
