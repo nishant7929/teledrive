@@ -51,7 +51,7 @@
     "serialize-error": "^8.1.0",
     "serverless-http": "^3.0.1",
     "source-map-support": "^0.5.19",
-    "telegram": "^2.15.5",
+    "telegram": "^2.26.8",
     "util": "0.12.5",
     "uuid-random": "^1.3.2"
   },

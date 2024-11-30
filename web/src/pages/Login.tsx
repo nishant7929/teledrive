@@ -26,7 +26,9 @@ const Login: React.FC<Props> = ({ me }) => {
 	const [formLogin] = useForm();
 	const [formLoginQRCode] = useForm();
 	const [currentStep, setCurrentStep] = useState<number>(0);
-	const [phoneData, setPhoneData] = useState<{ phone?: string, code?: number, short?: string }>({});
+	const [phoneData, setPhoneData] = useState<{ phone?: string, code?: number, short?: string }>({
+		code: 91, short: 'IN'
+	});
 	const [otp, setOtp] = useState<string>();
 	const [loadingSendCode, setLoadingSendCode] = useState<boolean>();
 	const [loadingLogin, setLoadingLogin] = useState<boolean>();
@@ -57,13 +59,13 @@ const Login: React.FC<Props> = ({ me }) => {
 			if (localStorage.getItem('experimental')) {
 				const client = await anonymousTelegramClient.connect();
 				if (phoneCodeHash) {
-					const { phoneCodeHash: newPhoneCodeHash, timeout } = await client.invoke(new Api.auth.ResendCode({
+					const { phoneCodeHash: newPhoneCodeHash, timeout }: any = await client.invoke(new Api.auth.ResendCode({
 						phoneNumber, phoneCodeHash }));
 					const session = client.session.save() as any;
 					localStorage.setItem('session', session);
 					data = { phoneCodeHash: newPhoneCodeHash, timeout };
 				} else {
-					const { phoneCodeHash, timeout } = await client.invoke(new Api.auth.SendCode({
+					const { phoneCodeHash, timeout }: any = await client.invoke(new Api.auth.SendCode({
 						apiId: Number(process.env.REACT_APP_TG_API_ID),
 						apiHash: process.env.REACT_APP_TG_API_HASH,
 						phoneNumber,
@@ -103,9 +105,9 @@ const Login: React.FC<Props> = ({ me }) => {
 					<Typography.Paragraph>
 						{error?.response?.data?.error || error.message || 'Something error'}
 					</Typography.Paragraph>
-					<Typography.Paragraph code>
+					{/* <Typography.Paragraph code>
 						{JSON.stringify(error?.response?.data || error?.data || error, null, 2)}
-					</Typography.Paragraph>
+					</Typography.Paragraph> */}
 				</>
 			});
 			if (error?.status === 400 || error?.response?.status === 400) {
